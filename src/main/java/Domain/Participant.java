@@ -1,6 +1,8 @@
-package ro.mpp2024.Domain;
+package Domain;
 
-public class Participant implements IEntity{
+import java.io.Serializable;
+
+public class Participant implements Identifier<Integer>, Serializable {
     private Integer id;
     private String name;
     private Integer capacity;
@@ -13,15 +15,6 @@ public class Participant implements IEntity{
         this.team = team;
     }
 
-    @Override
-    public Integer getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -45,5 +38,15 @@ public class Participant implements IEntity{
 
     public void setTeam(String team) {
         this.team = team;
+    }
+
+    @Override
+    public Integer getId() {
+        return this.id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id= id;
     }
 }
