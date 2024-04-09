@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.RaceController">
+    <top>
+        <HBox alignment="CENTER_LEFT">
+            <Button fx:id="backButton" text="Back" />
+        </HBox>
+    </top>
+    <center>
+        <VBox>
+            <ListView fx:id="racesListView" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </center>
+    <bottom>
+        <VBox>
+            <TextField fx:id="idTextField" promptText="ID" />
+            <TextField fx:id="capacityTextField" promptText="Capacity" />
+            <HBox>
+                <Button fx:id="addButton" text="Add" />
+                <Button fx:id="deleteButton" text="Delete" />
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>

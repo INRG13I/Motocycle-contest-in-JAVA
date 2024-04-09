@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AppController">
+    <left>
+        <VBox prefWidth="200">
+            <Label text="Participants" />
+            <ListView fx:id="participantsListView" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </left>
+    <center>
+        <VBox spacing="10.0" alignment="CENTER">
+            <Label fx:id="organizerLabel" />
+            <Button fx:id="participantsButton" text="Participants" />
+            <Button fx:id="racesButton" text="Races" />
+            <Button fx:id="registrationsButton" text="Registrations" />
+            <Button fx:id="logoutButton" text="Logout" />
+        </VBox>
+    </center>
+    <right>
+        <VBox prefWidth="200">
+            <VBox>
+                <Label text="Races" />
+                <ListView fx:id="racesListView" VBox.vgrow="ALWAYS" />
+            </VBox>
+            <VBox>
+                <Label text="Find by Team" />
+                <HBox>
+                    <TextField fx:id="teamTextField" />
+                    <Button fx:id="findButton" text="Find" />
+                </HBox>
+                <ListView fx:id="teamParticipantsListView" VBox.vgrow="ALWAYS" />
+            </VBox>
+        </VBox>
+    </right>
+</BorderPane>

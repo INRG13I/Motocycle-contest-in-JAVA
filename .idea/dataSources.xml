@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Motocycle_contest.db" uuid="45111c3c-79c8-4b6f-a84e-8799410b1919">
+    <data-source source="LOCAL" name="motocycle_contest.db" uuid="5178527a-2b56-4103-a0fc-1bcebff6d0a5">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/participant.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/motocycle_contest.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="test_motocycle_contest.db" uuid="96a08692-2996-48f2-b94c-39702be4141d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/test_motocycle_contest.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

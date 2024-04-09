@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.RegistrationController">
+    <center>
+        <HBox>
+            <VBox>
+                <Label text="Participants" />
+                <ListView fx:id="participantsListView" VBox.vgrow="ALWAYS" />
+            </VBox>
+            <VBox>
+                <Label text="Races" />
+                <ListView fx:id="racesListView" VBox.vgrow="ALWAYS" />
+            </VBox>
+            <VBox>
+                <Label text="Registrations" />
+                <ListView fx:id="registrationsListView" VBox.vgrow="ALWAYS" />
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox>
+            <TextField fx:id="registrationIdTextField" promptText="Registration ID" />
+            <TextField fx:id="raceIdTextField" promptText="Race ID" />
+            <TextField fx:id="participantIdTextField" promptText="Participant ID" />
+            <HBox>
+                <Button fx:id="addButton" text="Add" />
+                <Button fx:id="deleteButton" text="Delete" />
+                <Button fx:id="updateButton" text="Update" />
+            </HBox>
+        </VBox>
+    </bottom>
+    <top>
+        <Button fx:id="backButton" text="Back" alignment="CENTER_LEFT"/>
+    </top>
+</BorderPane>

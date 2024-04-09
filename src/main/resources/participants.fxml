@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ParticipantsController">
+    <center>
+        <VBox>
+            <ListView fx:id="participantsListView" VBox.vgrow="ALWAYS" />
+            <VBox>
+                <TextField fx:id="nameTextField" promptText="Name" />
+                <TextField fx:id="capacityTextField" promptText="Capacity" />
+                <TextField fx:id="teamTextField" promptText="Team" />
+                <TextField fx:id="idTextField" promptText="ID" />
+            </VBox>
+            <HBox>
+                <Button fx:id="addButton" text="Add" />
+                <Button fx:id="deleteButton" text="Delete" />
+                <Button fx:id="updateButton" text="Update" />
+                <Button fx:id="findByIdButton" text="Find by ID" />
+            </HBox>
+        </VBox>
+    </center>
+    <top>
+        <Button fx:id="backButton" text="Back" alignment="CENTER_RIGHT"/>
+    </top>
+</BorderPane>
